@@ -1,35 +1,29 @@
-# Do Vale Online Poker Clube — Landing Page
+# Do Vale Online Poker Clube - Landing Page
 
-Versão atualizada usando a imagem oficial do clube e o cinza texturizado como base visual da página.
+Versão com a imagem do clube embutida diretamente no `index.html`.
 
-## Arquivos
+## Por que esta versão resolve o problema da imagem?
 
-```text
-do-vale-github-logo-cinza/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-├── .nojekyll
-└── assets/
-    └── do-vale-logo.jpeg
-```
+A imagem não depende mais da pasta `assets` nem de caminho de arquivo no GitHub Pages. Ela está embutida dentro do HTML, então não aparece ícone quebrado mesmo que a pasta de imagens não suba corretamente.
 
-## Configurações atuais
+## Arquivos para subir no GitHub
 
-- Chave Pix: `51998123718`
+Suba estes arquivos na raiz do repositório:
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `.nojekyll`
+- `README.md`
+
+Não precisa subir pasta `assets` nesta versão.
+
+## Configurações já aplicadas
+
+- Pix: `51998123718`
 - WhatsApp do operador: `5551998123718`
-- Formulário: Nome completo + WhatsApp
-- Campo “Identificação no clube”: removido
-- Seção “Próximos torneios”: removida
-
-## Como atualizar no GitHub Pages
-
-1. Entre no repositório `do-vale-landing`.
-2. Substitua os arquivos atuais pelos arquivos desta pasta.
-3. Atenção: envie também a pasta `assets` com o arquivo `do-vale-logo.jpeg`.
-4. Aguarde alguns minutos para o GitHub Pages atualizar.
-
-## Observação
-
-A imagem do clube está em `assets/do-vale-logo.jpeg` e é chamada diretamente no `index.html` e no `style.css`.
+- Campo “Identificação no clube” removido
+- Seção “Próximos torneios” removida
+- Formulário com Nome completo e WhatsApp
+- Botão para copiar Pix
+- Botão para abrir WhatsApp com mensagem pronta
