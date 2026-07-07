@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing page para compra de fichas do Do Vale Online Poker Clube via Pix e envio de comprovante pelo WhatsApp." />
+  <title>Do Vale Online Poker Clube | Compra de Fichas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero__shade"></div>
+
+      <header class="topbar">
+        <div class="brand-mini">
+          <span class="brand-mini__icon">♠</span>
+          <span>Do Vale Online Poker Clube</span>
+        </div>
+        <span class="age-badge">18+</span>
+      </header>
+
+      <div class="hero__content">
+        <div class="logo-card" aria-label="Logo Do Vale Online Poker Clube">
+          <img src="assets/do-vale-logo.jpeg" alt="Do Vale Online Poker Clube" />
+        </div>
+
+        <p class="eyebrow">Compra rápida via Pix</p>
+        <h1>Compre fichas com segurança e envie o comprovante no WhatsApp.</h1>
+        <p class="hero__text">
+          Escolha o valor, faça o Pix para o administrador do clube e encaminhe o comprovante para conferência manual do operador.
+        </p>
+
+        <div class="hero__suits" aria-hidden="true">
+          <span>♠</span>
+          <span>♦</span>
+          <span>♥</span>
+          <span>♣</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="checkout-card" aria-labelledby="checkout-title">
+      <div class="section-heading">
+        <p class="step-label">Etapa 1</p>
+        <h2 id="checkout-title">Escolha o valor das fichas</h2>
+      </div>
+
+      <div class="value-grid" role="group" aria-label="Valores sugeridos">
+        <button class="value-btn" type="button" data-value="50">R$ 50</button>
+        <button class="value-btn" type="button" data-value="100">R$ 100</button>
+        <button class="value-btn" type="button" data-value="200">R$ 200</button>
+        <button class="value-btn" type="button" data-value="500">R$ 500</button>
+      </div>
+
+      <label class="field">
+        <span>Outro valor</span>
+        <input type="number" id="customValue" min="10" step="1" placeholder="Digite o valor em R$" inputmode="numeric" />
+      </label>
+
+      <div class="section-heading section-heading--spaced">
+        <p class="step-label">Etapa 2</p>
+        <h2>Informe seus dados</h2>
+      </div>
+
+      <div class="form-grid">
+        <label class="field">
+          <span>Nome completo</span>
+          <input type="text" id="clientName" placeholder="Ex: João Silva" autocomplete="name" />
+        </label>
+
+        <label class="field">
+          <span>WhatsApp do cliente</span>
+          <input type="tel" id="clientPhone" placeholder="Ex: 51999999999" autocomplete="tel" />
+        </label>
+      </div>
+
+      <label class="field">
+        <span>Identificação no clube</span>
+        <input type="text" id="clubId" placeholder="Ex: apelido, usuário ou ID" />
+      </label>
+
+      <div class="section-heading section-heading--spaced">
+        <p class="step-label">Etapa 3</p>
+        <h2>Pagamento via Pix</h2>
+      </div>
+
+      <div class="pix-panel">
+        <div>
+          <p class="pix-panel__label">Chave Pix do administrador</p>
+          <strong id="pixKey" class="pix-panel__key">51998123718</strong>
+        </div>
+
+        <button id="copyPixBtn" class="copy-btn" type="button">
+          Copiar chave Pix
+        </button>
+      </div>
+
+      <div class="summary-box">
+        <span>Valor selecionado</span>
+        <strong id="selectedValue">Nenhum valor selecionado</strong>
+      </div>
+
+      <button id="sendProofBtn" class="main-btn" type="button">
+        Já paguei, enviar comprovante no WhatsApp
+      </button>
+
+      <p class="fine-print">
+        A liberação dos créditos ocorre somente após conferência manual do pagamento pelo operador do clube.
+      </p>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <span class="info-card__icon">♠</span>
+        <h3>Como funciona</h3>
+        <p>O cliente paga via Pix, envia o comprovante e o operador confirma antes de adicionar os créditos.</p>
+      </article>
+
+      <article class="info-card">
+        <span class="info-card__icon">♦</span>
+        <h3>Conferência manual</h3>
+        <p>O comprovante não libera créditos automaticamente. O operador precisa validar o recebimento do Pix.</p>
+      </article>
+
+      <article class="info-card">
+        <span class="info-card__icon">♣</span>
+        <h3>Torneios em breve</h3>
+        <p>A próxima etapa será incluir os folders dos torneios e botões de compra direcionados para cada evento.</p>
+      </article>
+    </section>
+
+    <section class="rules-card">
+      <h2>Regras importantes</h2>
+      <ul>
+        <li>Uso exclusivo para participantes autorizados do clube.</li>
+        <li>Atendimento e liberação sujeitos ao horário de operação.</li>
+        <li>Informe corretamente nome, WhatsApp e identificação no clube.</li>
+        <li>O clube pode recusar pagamentos inconsistentes ou dados incompletos.</li>
+        <li>Permitido apenas para maiores de 18 anos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
