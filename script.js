@@ -1,6 +1,6 @@
 // Configurações principais
-const PIX_KEY = "51998123718";
-const OPERATOR_WHATSAPP = "5551998123718";
+const PIX_KEY = "51997123718";
+const OPERATOR_WHATSAPP = "5551997123718";
 const CLUB_NAME = "Do Vale Online Poker Clube";
 
 const valueButtons = document.querySelectorAll(".value-btn");
