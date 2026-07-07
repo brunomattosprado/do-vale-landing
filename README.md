@@ -1,67 +1,35 @@
 # Do Vale Online Poker Clube — Landing Page
 
-Landing page estática para compra de fichas via Pix com envio de comprovante pelo WhatsApp.
+Versão atualizada usando a imagem oficial do clube e o cinza texturizado como base visual da página.
 
 ## Arquivos
 
 ```text
-do-vale-github/
+do-vale-github-logo-cinza/
 ├── index.html
 ├── style.css
 ├── script.js
+├── README.md
 ├── .nojekyll
 └── assets/
     └── do-vale-logo.jpeg
 ```
 
-## Dados já configurados
+## Configurações atuais
 
 - Chave Pix: `51998123718`
 - WhatsApp do operador: `5551998123718`
-- Nome do clube: `Do Vale Online Poker Clube`
+- Formulário: Nome completo + WhatsApp
+- Campo “Identificação no clube”: removido
+- Seção “Próximos torneios”: removida
 
-O WhatsApp do operador está usando o mesmo número da chave Pix. Caso precise trocar, edite esta linha no arquivo `script.js`:
+## Como atualizar no GitHub Pages
 
-```js
-const OPERATOR_WHATSAPP = "5551998123718";
-```
+1. Entre no repositório `do-vale-landing`.
+2. Substitua os arquivos atuais pelos arquivos desta pasta.
+3. Atenção: envie também a pasta `assets` com o arquivo `do-vale-logo.jpeg`.
+4. Aguarde alguns minutos para o GitHub Pages atualizar.
 
-## Como publicar no GitHub Pages
+## Observação
 
-1. Crie um repositório no GitHub.
-2. Envie todos os arquivos deste pacote para a raiz do repositório.
-3. Entre em `Settings` > `Pages`.
-4. Em `Build and deployment`, selecione:
-   - `Source`: Deploy from a branch
-   - `Branch`: main
-   - `Folder`: /root
-5. Clique em `Save`.
-
-O GitHub vai gerar um link parecido com:
-
-```text
-https://seuusuario.github.io/nome-do-repositorio/
-```
-
-## Fluxo de uso
-
-1. Cliente escolhe o valor das fichas.
-2. Cliente informa nome completo e WhatsApp.
-3. Cliente copia a chave Pix.
-4. Cliente realiza o Pix no aplicativo do banco.
-5. Cliente clica em `Já paguei, enviar comprovante no WhatsApp`.
-6. O WhatsApp abre com mensagem pronta.
-7. Cliente anexa o comprovante.
-8. Operador confere o pagamento e adiciona os créditos manualmente.
-
-## Importante
-
-Esta versão não possui backend, banco de dados ou confirmação automática de Pix. A liberação dos créditos deve ser feita manualmente pelo operador após conferir o pagamento.
-
-## Próxima etapa
-
-Adicionar futuramente uma nova seção de folders dos torneios e criar botões específicos por evento.
-
-## Atualização
-
-A seção "Próximos torneios" foi removida nesta versão.
+A imagem do clube está em `assets/do-vale-logo.jpeg` e é chamada diretamente no `index.html` e no `style.css`.
