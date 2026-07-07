@@ -1,46 +1,63 @@
-# Do Vale Online Poker Clube - Landing Page de Compra de Fichas
+# Do Vale Online Poker Clube — Landing Page
 
-Landing page estática para compra de fichas via Pix e envio de comprovante pelo WhatsApp.
+Landing page estática para compra de fichas via Pix com envio de comprovante pelo WhatsApp.
 
 ## Arquivos
 
-- `index.html`: estrutura da página
-- `style.css`: visual baseado na identidade do clube
-- `script.js`: lógica de seleção de valor, copiar Pix e envio para WhatsApp
-- `assets/do-vale-logo.jpeg`: imagem base do clube
+```text
+do-vale-github/
+├── index.html
+├── style.css
+├── script.js
+├── .nojekyll
+└── assets/
+    └── do-vale-logo.jpeg
+```
 
 ## Dados já configurados
 
 - Chave Pix: `51998123718`
 - WhatsApp do operador: `5551998123718`
+- Nome do clube: `Do Vale Online Poker Clube`
 
-Por enquanto, o WhatsApp do operador está usando o mesmo número da chave Pix. Caso seja diferente, altere a linha abaixo em `script.js`:
+O WhatsApp do operador está usando o mesmo número da chave Pix. Caso precise trocar, edite esta linha no arquivo `script.js`:
 
 ```js
 const OPERATOR_WHATSAPP = "5551998123718";
 ```
 
-## Publicar no GitHub Pages
+## Como publicar no GitHub Pages
 
 1. Crie um repositório no GitHub.
 2. Envie todos os arquivos deste pacote para a raiz do repositório.
-3. Vá em `Settings` > `Pages`.
+3. Entre em `Settings` > `Pages`.
 4. Em `Build and deployment`, selecione:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
+   - `Source`: Deploy from a branch
+   - `Branch`: main
+   - `Folder`: /root
 5. Clique em `Save`.
 
-## Fluxo operacional
+O GitHub vai gerar um link parecido com:
 
-1. Cliente escolhe o valor.
-2. Cliente copia a chave Pix.
-3. Cliente realiza o pagamento no banco.
-4. Cliente clica em "Já paguei, enviar comprovante no WhatsApp".
-5. WhatsApp abre com mensagem pronta.
-6. Cliente anexa o comprovante.
-7. Operador confere o Pix e adiciona os créditos manualmente.
+```text
+https://seuusuario.github.io/nome-do-repositorio/
+```
 
-## Próxima etapa futura
+## Fluxo de uso
 
-Adicionar uma seção de folders de torneios com botões específicos para compra de fichas por evento.
+1. Cliente escolhe o valor das fichas.
+2. Cliente informa nome completo e WhatsApp.
+3. Cliente copia a chave Pix.
+4. Cliente realiza o Pix no aplicativo do banco.
+5. Cliente clica em `Já paguei, enviar comprovante no WhatsApp`.
+6. O WhatsApp abre com mensagem pronta.
+7. Cliente anexa o comprovante.
+8. Operador confere o pagamento e adiciona os créditos manualmente.
+
+## Importante
+
+Esta versão não possui backend, banco de dados ou confirmação automática de Pix. A liberação dos créditos deve ser feita manualmente pelo operador após conferir o pagamento.
+
+## Próxima etapa
+
+Adicionar os folders dos torneios na seção `Próximos torneios` e criar botões específicos por evento.
