@@ -1,34 +1,17 @@
-# Do Vale Online Poker Clube - Landing Page
+# Do Vale Online Poker Clube — Landing Page
 
-Versão com a imagem do clube embutida diretamente no `index.html`.
+Versão com ajuste de imagem quadrada/menor no hero.
 
-## Por que esta versão resolve o problema da imagem?
-
-A imagem não depende mais da pasta `assets` nem de caminho de arquivo no GitHub Pages. Ela está embutida dentro do HTML, então não aparece ícone quebrado mesmo que a pasta de imagens não suba corretamente.
-
-## Arquivos para subir no GitHub
-
-Suba estes arquivos na raiz do repositório:
+## Arquivos para subir na raiz do GitHub
 
 - `index.html`
 - `style.css`
 - `script.js`
-- `.nojekyll`
 - `README.md`
+- `.nojekyll`
 
-Não precisa subir pasta `assets` nesta versão.
+## Observação importante
 
-## Configurações já aplicadas
+Esta versão usa `style.css?v=logo-quadrado-2` e `script.js?v=logo-quadrado-2` para forçar o navegador a carregar os arquivos novos e evitar cache.
 
-- Pix: `51998123718`
-- WhatsApp do operador: `5551998123718`
-- Campo “Identificação no clube” removido
-- Seção “Próximos torneios” removida
-- Formulário com Nome completo e WhatsApp
-- Botão para copiar Pix
-- Botão para abrir WhatsApp com mensagem pronta
-
-
-## Ajuste desta versão
-
-Imagem do clube ajustada para aparecer inteira, com `object-fit: contain`, altura controlada no hero e enquadramento centralizado.
+Se ainda aparecer igual após subir, aguarde o GitHub Pages atualizar e use `Ctrl + F5`.
