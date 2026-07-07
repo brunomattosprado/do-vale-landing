@@ -60,4 +60,8 @@ Esta versão não possui backend, banco de dados ou confirmação automática de
 
 ## Próxima etapa
 
-Adicionar os folders dos torneios na seção `Próximos torneios` e criar botões específicos por evento.
+Adicionar futuramente uma nova seção de folders dos torneios e criar botões específicos por evento.
+
+## Atualização
+
+A seção "Próximos torneios" foi removida nesta versão.
