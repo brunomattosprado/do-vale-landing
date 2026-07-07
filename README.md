@@ -27,3 +27,8 @@ Não precisa subir pasta `assets` nesta versão.
 - Formulário com Nome completo e WhatsApp
 - Botão para copiar Pix
 - Botão para abrir WhatsApp com mensagem pronta
+
+
+## Ajuste desta versão
+
+Imagem do clube ajustada para aparecer inteira, com `object-fit: contain`, altura controlada no hero e enquadramento centralizado.

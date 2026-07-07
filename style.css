@@ -108,10 +108,10 @@ button { cursor: pointer; }
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: .92fr 1.08fr;
+  grid-template-columns: 0.86fr 1.14fr;
   gap: 34px;
   align-items: center;
-  padding: 34px;
+  padding: 30px;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background:
@@ -134,9 +134,13 @@ button { cursor: pointer; }
   position: relative;
   z-index: 1;
   overflow: hidden;
+  height: clamp(360px, 42vw, 520px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(240,207,120,.52);
   border-radius: 26px;
-  background: #3f413a;
+  background: linear-gradient(145deg, #565851, #3f413a 52%, #30322c);
   box-shadow:
     0 30px 90px rgba(0,0,0,.42),
     inset 0 0 0 1px rgba(255,255,255,.06),
@@ -154,8 +158,9 @@ button { cursor: pointer; }
 .hero__logo {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .hero__content {
@@ -504,6 +509,10 @@ h1 {
     grid-template-columns: 1fr;
     padding: 18px;
   }
+  .hero__art-card {
+    height: min(74vw, 520px);
+    max-height: 520px;
+  }
   .hero__content { text-align: center; }
   .hero__text { margin-left: auto; margin-right: auto; }
   .hero__highlights, .hero__suits { justify-content: center; }
@@ -533,6 +542,7 @@ h1 {
   }
 
   .hero__art-card {
+    height: min(86vw, 420px);
     border-radius: 19px;
   }
 
